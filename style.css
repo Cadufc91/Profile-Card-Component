@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--pic-bg);
+}
+
+:root{
+    --main-bg: hsl(185, 75%, 39%);
+    --pic-bg: hsl(229, 23%, 23%);
+    --text: hsl(227, 10%, 46%);
+    --subtitle: hsl(0, 0%, 59%);
+    --card-bg: hsl(0, 0%, 100%);
+}
+
+.main{
+    background: url(./images/bg-pattern-top.svg);
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.profile{
+    background: var(--card-bg);
+    border-radius: 15px;
+    max-width: 350px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.profile__header{
+    background: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+    width: 350px;
+}
+
+.profile__image{
+    border: 5px solid var(--card-bg);
+    border-radius: 50%;
+    height: 100px;
+    margin: -50px auto -30px auto;
+    overflow: hidden;
+    width: 100px;
+}
+
+.profile__image img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.card-body{
+    height: 250px;
+    line-height: 1.8rem;
+    margin-top: 54px;
+    margin-bottom: -75px;
+}
+
+.place{
+    margin-top: 10px;
+}
+
+.card-body__age, .place{
+    color: var(--subtitle);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.social{
+    border-top: 1px solid var(--subtitle);
+    padding-top: 22px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 23px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social__followers span{
+    display: block;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--subtitle);
+    letter-spacing: 0.1rem;
+}
+
+.attribution { 
+    font-size: 11px;
+     text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
